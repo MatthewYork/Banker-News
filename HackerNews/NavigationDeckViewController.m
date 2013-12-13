@@ -95,7 +95,7 @@
         };
         
         controller.completionHandler =myBlock;
-        [controller setInitialText:@"For those on the go, that need to stay in the know: Check out this free HN Reader app. https://itunes.apple.com/us/app/news-yc/id592893508?ls=1&mt=8"];
+        [controller setInitialText:@"For those on the go, that need to stay in the know: Check out this free Financier News app. https://itunes.apple.com/us/app/news-yc/id592893508?ls=1&mt=8"];
         [self presentViewController:controller animated:YES completion:Nil];
         
     }
@@ -175,7 +175,7 @@
 
 #pragma mark - Credits Delegate
 - (void)didClickGitHubLink {
-    LinksViewController *vc = [[LinksViewController alloc] initWithNibName:@"LinksViewController" bundle:nil url:[NSURL URLWithString:@"https://github.com/bennyguitar/News-YC---iPhone"] post:nil];
+    LinksViewController *vc = [[LinksViewController alloc] initWithNibName:@"LinksViewController" bundle:nil url:[NSURL URLWithString:@"https://github.com/MatthewYork/News-YC---iPhone"] post:nil];
     [(UINavigationController *)self.viewDeckController.centerController pushViewController:vc animated:YES];
     [self.viewDeckController toggleLeftView];
 }

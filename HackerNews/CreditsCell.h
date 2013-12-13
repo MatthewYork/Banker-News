@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kCellCreditsHeight 183
+#define kCellCreditsHeight 144
 
 @protocol CreditsCellDelegate <NSObject>
 

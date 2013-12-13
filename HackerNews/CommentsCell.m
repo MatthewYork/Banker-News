@@ -222,7 +222,7 @@
             [mutableAttributedString addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:14] range:link.UrlRange];
         }
         else {
-            [mutableAttributedString addAttribute:NSForegroundColorAttributeName value:kOrangeColor range:link.UrlRange];
+            [mutableAttributedString addAttribute:NSForegroundColorAttributeName value:kGreenColor range:link.UrlRange];
             [mutableAttributedString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleNone) range:link.UrlRange];
         }
     }

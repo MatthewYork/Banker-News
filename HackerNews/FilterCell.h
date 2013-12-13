@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-#define kFilterCellHeight 128
+#define kFilterCellHeight 83
 
 @class PostsViewController;
 

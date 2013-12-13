@@ -109,7 +109,7 @@
     }
     else {
         [controller.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_background_ios6"] forBarMetrics:UIBarMetricsDefault];
-        //controller.navigationController.navigationBar.tintColor = kOrangeColor; /* iOS 6 */
+        //controller.navigationController.navigationBar.tintColor = kGreenColor; /* iOS 6 */
     }
     
     // Set Center Image

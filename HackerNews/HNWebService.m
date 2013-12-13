@@ -23,8 +23,8 @@
 #import "HNWebService.h"
 #import "HNManager.h"
 
-#define kBaseURLAddress @"https://news.ycombinator.com/"
-#define kCookieDomain @"news.ycombinator.com"
+#define kBaseURLAddress @"http://boredbanker.com/"
+#define kCookieDomain @"boredbanker.com"
 #define kMaxConcurrentConnections 15
 
 #pragma mark - HNWebService
@@ -52,7 +52,7 @@
             pathAddition = @"ask";
             break;
         case PostFilterTypeBest:
-            pathAddition = @"best";
+            pathAddition = @"best?";
             break;
         case PostFilterTypeJobs:
             pathAddition = @"jobs";

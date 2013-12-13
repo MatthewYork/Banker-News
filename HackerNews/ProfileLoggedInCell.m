@@ -27,8 +27,8 @@
     [self.LogoutButton addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchUpInside];
     self.userLabel.text = [HNManager sharedManager].SessionUser.Username;
     self.karmaLabel.text = [NSString stringWithFormat:@"%d Karma", [HNManager sharedManager].SessionUser.Karma];
-    [self.LogoutButton setTitleColor:kOrangeColor forState:UIControlStateNormal];
-    [self.MySubmissionsButton setTitleColor:kOrangeColor forState:UIControlStateNormal];
+    [self.LogoutButton setTitleColor:kGreenColor forState:UIControlStateNormal];
+    [self.MySubmissionsButton setTitleColor:kGreenColor forState:UIControlStateNormal];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

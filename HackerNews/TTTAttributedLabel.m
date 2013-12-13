@@ -251,7 +251,7 @@ static inline NSAttributedString * NSAttributedStringBySettingColorFromContext(N
     [mutableActiveLinkAttributes setObject:[NSNumber numberWithBool:NO] forKey:(NSString *)kCTUnderlineStyleAttributeName];
 
     if ([NSMutableParagraphStyle class]) {
-        [mutableLinkAttributes setObject:kOrangeColor forKey:(NSString *)kCTForegroundColorAttributeName];
+        [mutableLinkAttributes setObject:kGreenColor forKey:(NSString *)kCTForegroundColorAttributeName];
         [mutableActiveLinkAttributes setObject:[UIColor redColor] forKey:(NSString *)kCTForegroundColorAttributeName];
 
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];

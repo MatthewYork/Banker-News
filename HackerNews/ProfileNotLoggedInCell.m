@@ -27,7 +27,7 @@
     self.usernameTextField.delegate = del;
     self.passwordTextField.delegate = del;
     [self.loginButton addTarget:self action:@selector(didClickLogin) forControlEvents:UIControlEventTouchUpInside];
-    [self.loginButton setTitleColor:kOrangeColor forState:UIControlStateNormal];
+    [self.loginButton setTitleColor:kGreenColor forState:UIControlStateNormal];
 }
 
 #pragma mark - Set Actions

@@ -10,7 +10,7 @@
 #import "HNComment.h"
 
 // This color is used in LinkButton
-#define kOrangeColor [UIColor colorWithRed:255/255.0f green:99/255.0f blue:37/255.0f alpha:1.0f]
+#define kGreenColor [UIColor colorWithRed:41/255.0f green:167/255.0f blue:85/255.0f alpha:1.0f]
 
 #define kHeaderImageHeight 44
 #define kHeaderImageWidth 98

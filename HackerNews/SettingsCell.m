@@ -65,7 +65,16 @@
 
 - (void)setThemeStatus {
     self.nightModeButton.alpha = 1;
-    [self.nightModeButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"nav_%@_on-01.png", self.ThemeMode == HNThemeTypeNight ? @"nightmode" : @"daymode"]] forState:UIControlStateNormal];
+    if (self.ThemeMode == HNThemeTypeDay) {
+        [self.nightModeButton setImage:[UIImage imageNamed:@"nav_daymode_on-01.png"] forState:UIControlStateNormal];
+
+    }
+    else {
+        [self.nightModeButton setImage:[UIImage imageNamed:@"nav_nightmode_on.png"] forState:UIControlStateNormal];
+    }
+    
+    //[self.nightModeButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"nav_%@_on-01.png", self.ThemeMode == HNThemeTypeNight ? @"nightmode" : @"daymode"]] forState:UIControlStateNormal];
+    
     self.themeLabel.text = [NSString stringWithFormat:@"Theme is %@", (self.ThemeMode == HNThemeTypeNight ? @"NIGHT" : @"DAY")];
     [[NSUserDefaults standardUserDefaults] setInteger:self.ThemeMode forKey:@"HNTheme"];
 }

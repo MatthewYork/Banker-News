@@ -23,7 +23,7 @@
 
 +(LinkButton *)newLinkButtonWithTag:(int)tag linkTag:(int)lTag frame:(CGRect)frame title:(NSString *)title {
     LinkButton *newLink = [[LinkButton alloc] initWithFrame:frame];
-    [newLink setBackgroundColor:kOrangeColor];
+    [newLink setBackgroundColor:kGreenColor];
     [newLink setTitle:title forState:UIControlStateNormal];
     [newLink.titleLabel setFont:[UIFont systemFontOfSize:13]];
     [newLink setTitleColor:[UIColor colorWithWhite:0.98 alpha:1.0] forState:UIControlStateNormal];

@@ -67,7 +67,7 @@ static HNTheme * _currentTheme = nil;
         [[HNTheme currentTheme].themeDict setValue:[UIColor colorWithRed:60/255.0 green:120/255.0 blue:71/255.0 alpha:1.0] forKey:@"HNJobs"];
         [[HNTheme currentTheme].themeDict setValue:[UIColor colorWithRed:45/255.0 green:90/255.0 blue:55/255.0 alpha:1.0] forKey:@"HNJobsBottom"];
         [[HNTheme currentTheme].themeDict setValue:[UIColor colorWithRed:44/255.0 green:44/255.0 blue:44/255.0 alpha:1.0] forKey:@"PostActions"];
-        [[HNTheme currentTheme].themeDict setValue:kOrangeColor forKey:@"NavBar"];
+        [[HNTheme currentTheme].themeDict setValue:kGreenColor forKey:@"NavBar"];
     }
     else {
         NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:@"Theme"]);
@@ -83,7 +83,7 @@ static HNTheme * _currentTheme = nil;
         [[HNTheme currentTheme].themeDict setValue:[UIColor colorWithRed:170/255.0 green:235/255.0 blue:185/255.0 alpha:1.0] forKey:@"HNJobs"];
         [[HNTheme currentTheme].themeDict setValue:[UIColor colorWithRed:128/255.0 green:178/255.0 blue:141/255.0 alpha:1.0] forKey:@"HNJobsBottom"];
         [[HNTheme currentTheme].themeDict setValue:[UIColor colorWithRed:144/255.0 green:144/255.0 blue:144/255.0 alpha:1.0] forKey:@"PostActions"];
-        [[HNTheme currentTheme].themeDict setValue:kOrangeColor forKey:@"NavBar"];
+        [[HNTheme currentTheme].themeDict setValue:kGreenColor forKey:@"NavBar"];
     }
 }
 

@@ -24,13 +24,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Set Pro & Start HNManager Session
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"Pro"]) {
-        [[HNManager sharedManager] startSession];
-    }
-    else {
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"Pro"];
-    }
-    
+    [[HNManager sharedManager] startSession];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Pro"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
     // Check Theme
     if (![[NSUserDefaults standardUserDefaults] valueForKey:@"HNTheme"]) {
         [[NSUserDefaults standardUserDefaults] setInteger:HNThemeTypeNight forKey:@"HNTheme"];
