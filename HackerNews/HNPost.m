@@ -55,7 +55,7 @@
         
         // Scan for Upvotes
         if ([htmlComponents[xx] rangeOfString:@"dir=up"].location != NSNotFound) {
-            [scanner scanBetweenString:@"href=\"" andString:@"whence" intoString:&upvoteString];
+            [scanner scanBetweenString:@"href=\"" andString:@"\">" intoString:&upvoteString];
             newPost.UpvoteURLAddition = upvoteString;
         }
         
@@ -105,7 +105,7 @@
             // Check if AskHN
             if ([urlString rangeOfString:@"http"].location == NSNotFound && newPost.PostId.length > 0) {
                 newPost.Type = PostTypeAskHN;
-                urlString = [@"https://news.ycombinator.com/" stringByAppendingString:urlString];
+                urlString = [@"http://boredbanker.com/" stringByAppendingString:urlString];
             }
             else {
                 newPost.Type = PostTypeDefault;

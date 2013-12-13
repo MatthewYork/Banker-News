@@ -179,7 +179,7 @@
     
     
     // First things first, let's grab that FNID
-    NSString *urlPath = [NSString stringWithFormat:@"%@%@", kBaseURLAddress, @"newslogin?whence=%6e%65%77%73"];
+    NSString *urlPath = [NSString stringWithFormat:@"%@%@", kBaseURLAddress, @"x?fnid=bSGkoSiMOM"];
     
     // Build the operation
     HNOperation *operation = [[HNOperation alloc] init];

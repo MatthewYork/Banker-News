@@ -206,7 +206,7 @@ static HNManager * _sharedManager = nil;
 }
 
 + (NSHTTPCookie *)getHNCookie {
-    NSArray *cookieArray = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:[NSURL URLWithString:@"https://news.ycombinator.com/"]];
+    NSArray *cookieArray = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:[NSURL URLWithString:@"http://boredbanker.com/"]];
     if (cookieArray.count > 0) {
         NSHTTPCookie *cookie = cookieArray[0];
         if ([cookie.name isEqualToString:@"user"]) {

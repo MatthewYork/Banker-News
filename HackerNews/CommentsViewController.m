@@ -296,7 +296,7 @@
 - (void)didClickShareCommentAtIndex:(int)index {
     HNComment *shareComment = self.Comments[index];
     NSMutableString *shareString = [@"" mutableCopy];
-    [shareString appendFormat:@"%@:\n%@\n\nhttps://news.ycombinator.com/item?id=%@", shareComment.Username, shareComment.Text, shareComment.CommentId];
+    [shareString appendFormat:@"%@:\n%@\n\nhttp://boredbanker.com/item?id=%@", shareComment.Username, shareComment.Text, shareComment.CommentId];
     NSArray *activityItems = @[shareString];
     UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     [self presentViewController:activityController animated:YES completion:nil];

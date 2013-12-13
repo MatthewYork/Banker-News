@@ -163,6 +163,7 @@
 #pragma mark - Did Login
 -(void)didLoginOrOut {
     [self buildNavBar];
+    [self loadHomepage];
 }
 
 

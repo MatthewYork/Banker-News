@@ -33,7 +33,7 @@
         newLink.Url = result.URL;
         
         // Find out if it's an HN contained link
-        if ([newLink.Url.absoluteString rangeOfString:@"news.ycombinator.com/"  ].location != NSNotFound) {
+        if ([newLink.Url.absoluteString rangeOfString:@"boredbanker.com/"  ].location != NSNotFound) {
             newLink.Type = LinkTypeHN;
         }
         else {
