@@ -1,4 +1,4 @@
-News/YC for iPhone
+Banker News for iPhone
 ================
 
 The Android version of Banker News, the Financier News app. (boredbanker.com)
