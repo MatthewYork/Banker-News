@@ -36,5 +36,15 @@
         [self.delegate didClickGitHubLink];
     }
 }
+- (IBAction)didSelectTwitterButton:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(didClickTwitterLink)]) {
+        [self.delegate didClickTwitterLink];
+    }
+}
+- (IBAction)didSelectGithubProfileButton:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(didClickGitHubProfileLink)]) {
+        [self.delegate didClickGitHubProfileLink];
+    }
+}
 
 @end

@@ -146,6 +146,7 @@
 		C0FB763C1803B18200BDA142 /* HNCommentLink.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB76381803B18200BDA142 /* HNCommentLink.m */; };
 		C0FB763F1803B18F00BDA142 /* HNUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB763E1803B18F00BDA142 /* HNUtilities.m */; };
 		C0FB76421803B19B00BDA142 /* HNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FB76411803B19B00BDA142 /* HNManager.m */; };
+		F0B849A0185CB2C600489FDE /* bitcoin_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = F0B8499F185CB2C600489FDE /* bitcoin_logo_white.png */; };
 		F0BF943F185A73B6000FF899 /* icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BF943A185A73B6000FF899 /* icon_29.png */; };
 		F0BF9440185A73B6000FF899 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BF943B185A73B6000FF899 /* icon_57.png */; };
 		F0BF9441185A73B6000FF899 /* icon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BF943C185A73B6000FF899 /* icon_80.png */; };
@@ -350,6 +351,7 @@
 		C0FB763E1803B18F00BDA142 /* HNUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNUtilities.m; sourceTree = "<group>"; };
 		C0FB76401803B19B00BDA142 /* HNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNManager.h; sourceTree = "<group>"; };
 		C0FB76411803B19B00BDA142 /* HNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNManager.m; sourceTree = "<group>"; };
+		F0B8499F185CB2C600489FDE /* bitcoin_logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_logo_white.png; sourceTree = "<group>"; };
 		F0BF943A185A73B6000FF899 /* icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29.png; sourceTree = "<group>"; };
 		F0BF943B185A73B6000FF899 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
 		F0BF943C185A73B6000FF899 /* icon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_80.png; sourceTree = "<group>"; };
@@ -515,7 +517,7 @@
 				C01EDEB81733698D00AE97B8 /* MessageUI.framework */,
 				C01EDEB61733698600AE97B8 /* Social.framework */,
 				C01EDE451731A67C00AE97B8 /* QuartzCore.framework */,
-				C01EDDEC1731553B00AE97B8 /* HackerNews */,
+				C01EDDEC1731553B00AE97B8 /* BankerNews */,
 				C01EDDE51731553B00AE97B8 /* Frameworks */,
 				C01EDDE41731553B00AE97B8 /* Products */,
 			);
@@ -541,7 +543,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C01EDDEC1731553B00AE97B8 /* HackerNews */ = {
+		C01EDDEC1731553B00AE97B8 /* BankerNews */ = {
 			isa = PBXGroup;
 			children = (
 				C0CC4E7C1816D71E00D39DC5 /* Controllers */,
@@ -553,6 +555,7 @@
 				C0970E4817EA6CF1003FD742 /* Images.xcassets */,
 				C01EDDED1731553B00AE97B8 /* Supporting Files */,
 			);
+			name = BankerNews;
 			path = HackerNews;
 			sourceTree = "<group>";
 		};
@@ -673,6 +676,7 @@
 		C01EDE4B1731A7E400AE97B8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F0B8499F185CB2C600489FDE /* bitcoin_logo_white.png */,
 				F0BF9446185A79E6000FF899 /* launch images */,
 				F0BF9439185A73AF000FF899 /* icons */,
 				C02032BB18270E680038950B /* topicon.png */,
@@ -890,7 +894,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Benjamin Gordon";
+				ORGANIZATIONNAME = "Matthew York";
 				TargetAttributes = {
 					C01EDDE21731553B00AE97B8 = {
 						DevelopmentTeam = F524X93FN5;
@@ -952,6 +956,7 @@
 				C01EDE6E1731A84800AE97B8 /* nav_readability_on-01.png in Resources */,
 				C0CC4E9B1818752600D39DC5 /* upvote-01.png in Resources */,
 				C078EE18181ACB7A008DC47C /* nav_back_ios6-01.png in Resources */,
+				F0B849A0185CB2C600489FDE /* bitcoin_logo_white.png in Resources */,
 				C01EDE701731A84800AE97B8 /* email-01.png in Resources */,
 				C01EDE711731A84800AE97B8 /* facebook-01.png in Resources */,
 				C0CC4EA01818AC9300D39DC5 /* CommentAuxiliaryView.xib in Resources */,
@@ -1139,7 +1144,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: matt york (F524X93FN5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: matt york (F524X93FN5)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1170,8 +1176,8 @@
 		C01EDE081731553B00AE97B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: matt york (F524X93FN5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: matt york (F524X93FN5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HackerNews/BankerNews-Prefix.pch";
 				INFOPLIST_FILE = "HackerNews/BankerNews-Info.plist";

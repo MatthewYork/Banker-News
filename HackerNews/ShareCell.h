@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kCellShareHeight 112
+#define kCellShareHeight 102
 
 @protocol NavShareCellDelegate <NSObject>
 

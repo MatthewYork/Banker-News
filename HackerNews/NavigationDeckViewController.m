@@ -180,6 +180,18 @@
     [self.viewDeckController toggleLeftView];
 }
 
+- (void)didClickTwitterLink {
+    LinksViewController *vc = [[LinksViewController alloc] initWithNibName:@"LinksViewController" bundle:nil url:[NSURL URLWithString:@"https://twitter.com/themattyork"] post:nil];
+    [(UINavigationController *)self.viewDeckController.centerController pushViewController:vc animated:YES];
+    [self.viewDeckController toggleLeftView];
+}
+
+- (void)didClickGitHubProfileLink {
+    LinksViewController *vc = [[LinksViewController alloc] initWithNibName:@"LinksViewController" bundle:nil url:[NSURL URLWithString:@"https://github.com/MatthewYork"] post:nil];
+    [(UINavigationController *)self.viewDeckController.centerController pushViewController:vc animated:YES];
+    [self.viewDeckController toggleLeftView];
+}
+
 
 #pragma mark - Profile Delegate
 - (void)didClickLogout {
